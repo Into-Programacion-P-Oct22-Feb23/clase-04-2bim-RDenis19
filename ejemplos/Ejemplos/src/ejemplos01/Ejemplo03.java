@@ -5,6 +5,8 @@
  */
 package ejemplos01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -17,6 +19,8 @@ public class Ejemplo03 {
                                          // obtenerSuma
         System.out.printf("El valor de la suma es: %d\n", valor);
         
+        int valor2 = obtenerSuma2();
+        System.out.printf("El valor de la suma es: %d\n", valor2);
         // System.out.printf("El valor de la suma es: %d\n", obtenerSuma(10, 30));
     }
     
@@ -27,6 +31,16 @@ public class Ejemplo03 {
         return suma;
         // return a + b;
     }
-    
+    public static int obtenerSuma2(){
+        int suma;
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Ingrese el valor de a");
+        int a = entrada.nextInt();
+        System.out.println("Ingrese el valor de b");
+        int b = entrada.nextInt();
+        suma = a + b;
+        return suma;
+        // return a + b;
+    }
     
 }
